@@ -91,7 +91,7 @@ describe("Interval relations", () => {
 
     const intervals = {
         precedes: new Interval(BEFORE_BASE, randomBetween(BEFORE_BASE, BASE_START)), // starts before, ends before : precedes
-        isPrecededBy: new Interval(randomBetween(BASE_END, AFTER_BASE), AFTER_BASE), // starts after, ends on after : is preceded
+        isPrecededBy: new Interval(randomBetween(BASE_END+1, AFTER_BASE), AFTER_BASE), // starts after, ends on after : is preceded
         meets: new Interval(BEFORE_BASE, BASE_START), // starts before, ends on start : meets
         isMetBy: new Interval(BASE_END, AFTER_BASE), // starts on end, ends on after : is met
         overlaps: new Interval(BEFORE_BASE, randomBetween(BASE_START + 1, BASE_END)), // starts before, ends during : overlap
