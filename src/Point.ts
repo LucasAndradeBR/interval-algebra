@@ -1,9 +1,10 @@
 import { defaultCompareFunction } from "./DefaultCompareFunction";
-import { Interval } from "./Interval";
-import { CompareFunctions } from "./types/CompareFunction";
+import Interval from "./Interval";
+import type { CompareFunctions } from "./types/CompareFunction";
+import type { PointToIntervalRelation, PointToPointRelation } from "./types/Relations";
 
 
-export class Point<t>{
+export default class Point<t>{
     constructor(public value: t, private compareFunction: CompareFunctions<t> = defaultCompareFunction) {}
 
     isSmaller(base: Point<t>, compareFunction = this.compareFunction) {

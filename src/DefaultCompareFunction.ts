@@ -1,4 +1,4 @@
-import { CompareFunctions } from "./types/CompareFunction"
+import type { CompareFunctions } from "./types/CompareFunction"
 
 type Type = unknown
 

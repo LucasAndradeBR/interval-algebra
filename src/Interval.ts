@@ -1,8 +1,9 @@
 import { defaultCompareFunction } from "./DefaultCompareFunction"
-import { Point } from "./Point"
-import { CompareFunctions } from "./types/CompareFunction"
+import Point from "./Point"
+import type { CompareFunctions } from "./types/CompareFunction"
+import type { IntervalToIntervalRelation } from "./types/Relations"
 
-export class Interval<t>{
+export default class Interval<t>{
     public start: Point<t>
     public end: Point<t>
     public reverse: boolean = false
