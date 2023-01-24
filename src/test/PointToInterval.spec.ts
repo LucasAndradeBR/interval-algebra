@@ -1,5 +1,5 @@
-import { Point } from '../Point'
-import { Interval } from '../Interval'
+import Point from '../Point'
+import Interval from '../Interval'
 import { CompareFunctions } from '../types/CompareFunction'
 
 describe("Numeric point and interval", () => {

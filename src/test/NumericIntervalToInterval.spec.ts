@@ -1,4 +1,4 @@
-import { Interval } from "../Interval"
+import Interval from "../Interval"
 
 export function randomBetween(min: number, max: number) { // max excluded
     return Math.floor(Math.random() * (max - min) + min)

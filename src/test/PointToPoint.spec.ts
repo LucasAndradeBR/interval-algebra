@@ -1,4 +1,4 @@
-import { Point } from '../Point'
+import Point from '../Point'
 import { CompareFunctions } from '../types/CompareFunction'
 
 describe("Numeric point", () => {
