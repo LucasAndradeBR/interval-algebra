@@ -2,8 +2,10 @@
   "name": "interval-algebra",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "scripts": {
+    "dev": "nodemon ./src/main.ts",
     "build": "tsc",
     "test": "jest"
   },
